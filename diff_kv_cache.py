@@ -119,7 +119,7 @@ if __name__ == "__main__":
     LAYERS = 30
     CHUNK_LEN = 1560
     CHUNKS = 21
-    DENOISE_STEPS = 4
+    DENOISE_STEPS = 5
 
     torch.set_default_device("cuda")
     model = Denoise(dim=DIM, n_heads=N_HEADS, layers=LAYERS).cuda()
